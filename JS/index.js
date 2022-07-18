@@ -48,3 +48,4 @@ function getGame(plataform) {
 		});
 };
 
+

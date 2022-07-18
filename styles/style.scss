@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=Hind:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
 
-@mixin background {
-  background-color: white;
+@mixin backgroundMain {
+  background: url(../img/background-hand-in.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@mixin backgroundGames {
+  /* From https://css.glass */
+  background-image: linear-gradient(to top, #0a1e60b0 0%, #330867c4 100%);
 }
 
 @mixin titles {
@@ -12,7 +19,7 @@
 
 @mixin subtitles {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
 }
 
@@ -21,42 +28,127 @@
   font-weight: 200;
 }
 
-$first-color: #c3e5fe;
-$second-color: #fedcc3;
-$third-color: #2b2d42;
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  @include background;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  @include backgroundMain;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  // width: max-content; THIS IS FOR MOBILE MEDIAQUERIE
+  width: 50vw;
+  height: 50vh;
+  background: rgba(158, 118, 245, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(158, 118, 245, 0.11);
+}
+
+.welcome h1 {
+  @include titles;
+  font-weight: 300;
+  margin: 1rem;
+}
+
+.welcome p {
+  @include subtitles;
+  margin: 1rem;
+  font-size: larger;
+  color: white;
+}
+
+.arrow {
+  margin: 3rem;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: max-content;
+  color: white;
+  @include backgroundGames;
 }
 
 #conteiner-form {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 30px;
+  margin: 50px;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.165);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.5px);
+-webkit-backdrop-filter: blur(9.5px);
+border: 1px solid rgba(255, 255, 255, 0.193);
 }
 
 #conteiner-form h1 {
-
+  @include titles;
+  margin-bottom: 2rem;
 }
 
 label {
-  
+  margin-bottom: 2rem;
+  @include subtitles;
 }
 
 #field {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 2rem;
+  @include text;
+  font-weight: 500;
 }
 
 #btn {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 #btn:hover {
 }
 
 #game-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #game-conteiner div:hover {

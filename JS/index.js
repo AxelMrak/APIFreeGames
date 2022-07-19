@@ -10,7 +10,7 @@ button.addEventListener(`click`, e => {
 });
 
 // Funcion que utilizaremos para obtener la informacion (Juegos) desde la API
-function getGame(plataform) {
+function getGame(platform) {
 
 	const options = {
 		method: 'GET',
@@ -20,7 +20,7 @@ function getGame(plataform) {
 		}
 	}; //Este objeto es para validacion ya que obtuvimos acceso a la API a traves de RAPID API. Esta funcion le pasa las credenciales al fetch
 
-	fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?platform=${plataform}`, options) //Obtenemos desde la URL. FETCH es buscar. Busca la informacion en la URL dada.
+	fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?platform=${platform}`, options) //Obtenemos desde la URL. FETCH es buscar. Busca la informacion en la URL dada.
 		.then(response => response.json()) //Entonces, buscamos la respuesta y nos enviara un .JSON, nosotros no podemos trabajar con un .JSON sino que tenemos que pasarlo a String o array en este caso, y lo hacemos con respuesta.json().
 		.then(data => {//Accedemos a la informacion y nos devuelve un array de objetos, en donde cada objeto es un juego.
 			const data1 = data.slice(0, 10); //Limitamos la cantidad de objetos que mostramos en la pagina

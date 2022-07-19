@@ -8,8 +8,6 @@
   background-attachment: fixed;
 }
 @mixin backgroundGames {
-  /* From https://css.glass */
-  background-image: linear-gradient(to top, #0a1e60b0 0%, #330867c4 100%);
 }
 
 @mixin titles {
@@ -38,8 +36,6 @@
   display: none;
 }
 
-body {
-}
 
 .main {
   display: flex;
@@ -91,11 +87,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   height: max-content;
   color: white;
-  @include backgroundGames;
+  @include backgroundMain;
 }
 
 #conteiner-form {
@@ -106,13 +101,12 @@ body {
   width: 60%;
   padding: 30px;
   margin: 50px;
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.165);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(9.5px);
--webkit-backdrop-filter: blur(9.5px);
-border: 1px solid rgba(255, 255, 255, 0.193);
+  background: #52026d3e;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.072);
 }
 
 #conteiner-form h1 {
@@ -129,22 +123,56 @@ label {
   text-align: center;
   border: 1px solid white;
   border-radius: 20px;
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 2rem;
   @include text;
   font-weight: 500;
 }
 
 #btn {
+  width: 26%;
+  @include text;
+  font-weight: 500;
+  color: rgb(40, 1, 51);
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 4px;
   padding: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
 }
 
 #btn:hover {
+  color: white;
+}
+
+#btn::after {
+  content: "";
+  background: #2a003fd8; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100vw;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+#btn:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 #game-conteiner {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,31 +180,81 @@ label {
 }
 
 #game-conteiner div:hover {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 #game-conteiner div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 50%;
+  margin: 15px;
+  padding: 20px;
+  background: rgba(158, 118, 245, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(158, 118, 245, 0.11);
 }
 
 #game-conteiner img {
+  margin: 5px;
+  border-radius: 10px;
 }
 
 #game-conteiner h3 {
+  @include subtitles;
+  margin: 10px;
 }
 
 #game-conteiner p {
+  @include text;
+  margin: 10px;
 }
 
 #game-conteiner a:link,
 a:visited {
-  background-color: white;
-  padding: 10px;
+  @include text;
+  width: 10%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
   margin: 5px;
-  border: 1px solid white;
-  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.265);
+  border-radius: 5px;
+  text-align: center;
   text-decoration: none;
-  color: black;
+  color: white;
   font-style: normal;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
 }
 
 #game-conteiner a:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+#game-conteiner a::after {
+  content: "";
+  background: #5a52fb1f; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+
+#game-conteiner a:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
 }

@@ -32,10 +32,7 @@ $laptop: 1024px;
   height: 50vh;
   text-align: center;
   @media screen and (max-width: $small) {
-    width: 50vh;
-  }
-  @media screen and (max-width: $laptop) {
-    width: 90vh;
+    width: 60vh;
   }
 }
 
@@ -43,9 +40,6 @@ $laptop: 1024px;
   @include titles;
   font-weight: 300;
   margin: 1rem;
-  @media screen and (max-width: $laptop) {
-   font-size: 70px;
-  }
 }
 
 .welcome p {
@@ -56,17 +50,11 @@ $laptop: 1024px;
   @media screen and (max-width: $small) {
     font-size: medium;
   }
-  @media screen and (max-width: $laptop) {
-    font-size: 50px;
-  }
 }
 
 .arrow {
   margin: 3rem;
   animation: arrow 2s infinite alternate;
-  @media screen and (max-width: $laptop) {
-    width: 10%;
-  }
 }
 
 @keyframes arrow {
@@ -105,28 +93,18 @@ $laptop: 1024px;
   border: 1px solid rgba(255, 255, 255, 0.072);
   text-align: center;
   @media screen and (max-width: $small) {
-    width: 55vh;
-  }
-  @media screen and (max-width: $laptop) {
-    width: 90vh;
+    width: 60%;
   }
 }
 
 #container-form h1 {
   @include titles;
   margin-bottom: 2rem;
-  @media screen and (max-width: $laptop) {
-    font-size: 40px;
-    font-weight: 400;
-  }
 }
 
 label {
   @include subtitles;
   margin-bottom: 2rem;
-  @media screen and (max-width: $laptop) {
-    font-size: 30px;
-  }
 }
 
 #field {
@@ -139,10 +117,6 @@ label {
   font-weight: 500;
   @media screen and (max-width: $small) {
    padding: 20px;
-  }
-  @media screen and (max-width: $laptop) {
-    padding: 30px;
-    font-size: 20px;
   }
 }
 
@@ -163,11 +137,6 @@ label {
     padding: 17px;
     border-radius: 25px;
     font-size: 15px;
-  }
-  @media screen and (max-width: $laptop) {
-    font-size: 30px;
-    padding: 15px;
-    border-radius: 20px;
   }
 }
 
@@ -223,9 +192,6 @@ label {
   @media screen and (max-width: $small) {
     width: 73%;
   }
-  @media screen and (max-width: $laptop) {
-    width: 80%;
-  }
 }
 
 #game-container img {
@@ -234,9 +200,6 @@ label {
   @media screen and (max-width: $small) {
     width: 110%;
   }
-  @media screen and (max-width: $laptop) {
-    width: 80%;
-  }
 }
 
 #game-container h3 {
@@ -244,9 +207,6 @@ label {
   margin: 10px;
   @media screen and (max-width: $small) {
     margin: 7px;
-  }
-  @media screen and (max-width: $laptop) {
-    font-size: 50px;
   }
 }
 
@@ -257,9 +217,6 @@ label {
   @media screen and (max-width: $small) {
     margin: 9px;
     font-size: small;
-  }
-  @media screen and (max-width: $laptop) {
-    font-size: 25px;
   }
 }
 
@@ -284,14 +241,6 @@ a:visited {
     width: 50%;
     padding: 7px;
     border-radius: 25px;
-    background-color: white;
-    color: black;
-  }
-  @media screen and (max-width: $laptop) {
-    width: 15%;
-    padding: 15px;
-    border-radius: 25px;
-    font-size: 30px;
     background-color: white;
     color: black;
   }

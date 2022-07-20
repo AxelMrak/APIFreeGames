@@ -68,11 +68,23 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .welcome {
+    width: 90vh;
+  }
+}
+
 .welcome h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-weight: 300;
   margin: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .welcome h1 {
+    font-size: 70px;
+  }
 }
 
 .welcome p {
@@ -90,10 +102,22 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .welcome p {
+    font-size: 50px;
+  }
+}
+
 .arrow {
   margin: 3rem;
   -webkit-animation: arrow 2s infinite alternate;
           animation: arrow 2s infinite alternate;
+}
+
+@media screen and (max-width: 1024px) {
+  .arrow {
+    width: 10%;
+  }
 }
 
 @-webkit-keyframes arrow {
@@ -182,10 +206,23 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  #container-form {
+    width: 90vh;
+  }
+}
+
 #container-form h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #container-form h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
 }
 
 label {
@@ -193,6 +230,12 @@ label {
   font-weight: 300;
   font-style: italic;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  label {
+    font-size: 30px;
+  }
 }
 
 #field {
@@ -209,6 +252,13 @@ label {
 @media screen and (max-width: 450px) {
   #field {
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #field {
+    padding: 30px;
+    font-size: 20px;
   }
 }
 
@@ -233,6 +283,14 @@ label {
     padding: 17px;
     border-radius: 25px;
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #btn {
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 20px;
   }
 }
 
@@ -326,6 +384,12 @@ label {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  #game-container div {
+    width: 80%;
+  }
+}
+
 #game-container img {
   margin: 5px;
   border-radius: 10px;
@@ -333,7 +397,13 @@ label {
 
 @media screen and (max-width: 450px) {
   #game-container img {
-    width: 113%;
+    width: 110%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #game-container img {
+    width: 80%;
   }
 }
 
@@ -350,16 +420,29 @@ label {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  #game-container h3 {
+    font-size: 50px;
+  }
+}
+
 #game-container p {
   font-family: "Hind", sans-serif;
   font-weight: 200;
   margin: 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 450px) {
   #game-container p {
     margin: 9px;
     font-size: small;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #game-container p {
+    font-size: 25px;
   }
 }
 
@@ -389,6 +472,18 @@ a:visited {
     width: 50%;
     padding: 7px;
     border-radius: 25px;
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #game-container a:link,
+  a:visited {
+    width: 15%;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 30px;
     background-color: white;
     color: black;
   }

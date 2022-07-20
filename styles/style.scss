@@ -3,7 +3,7 @@
 @import "mixins";
 
 $small: 450px;
-
+$laptop: 1024px;
 
 * {
   box-sizing: border-box;
@@ -34,12 +34,18 @@ $small: 450px;
   @media screen and (max-width: $small) {
     width: 50vh;
   }
+  @media screen and (max-width: $laptop) {
+    width: 90vh;
+  }
 }
 
 .welcome h1 {
   @include titles;
   font-weight: 300;
   margin: 1rem;
+  @media screen and (max-width: $laptop) {
+   font-size: 70px;
+  }
 }
 
 .welcome p {
@@ -50,11 +56,17 @@ $small: 450px;
   @media screen and (max-width: $small) {
     font-size: medium;
   }
+  @media screen and (max-width: $laptop) {
+    font-size: 50px;
+  }
 }
 
 .arrow {
   margin: 3rem;
   animation: arrow 2s infinite alternate;
+  @media screen and (max-width: $laptop) {
+    width: 10%;
+  }
 }
 
 @keyframes arrow {
@@ -95,16 +107,26 @@ $small: 450px;
   @media screen and (max-width: $small) {
     width: 55vh;
   }
+  @media screen and (max-width: $laptop) {
+    width: 90vh;
+  }
 }
 
 #container-form h1 {
   @include titles;
   margin-bottom: 2rem;
+  @media screen and (max-width: $laptop) {
+    font-size: 40px;
+    font-weight: 400;
+  }
 }
 
 label {
   @include subtitles;
   margin-bottom: 2rem;
+  @media screen and (max-width: $laptop) {
+    font-size: 30px;
+  }
 }
 
 #field {
@@ -117,6 +139,10 @@ label {
   font-weight: 500;
   @media screen and (max-width: $small) {
    padding: 20px;
+  }
+  @media screen and (max-width: $laptop) {
+    padding: 30px;
+    font-size: 20px;
   }
 }
 
@@ -137,6 +163,11 @@ label {
     padding: 17px;
     border-radius: 25px;
     font-size: 15px;
+  }
+  @media screen and (max-width: $laptop) {
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 20px;
   }
 }
 
@@ -160,6 +191,7 @@ label {
   @media screen and (max-width: $small) {
     background: white;
     content: none;
+
   }
 }
 
@@ -191,13 +223,19 @@ label {
   @media screen and (max-width: $small) {
     width: 73%;
   }
+  @media screen and (max-width: $laptop) {
+    width: 80%;
+  }
 }
 
 #game-container img {
   margin: 5px;
   border-radius: 10px;
   @media screen and (max-width: $small) {
-    width: 113%;
+    width: 110%;
+  }
+  @media screen and (max-width: $laptop) {
+    width: 80%;
   }
 }
 
@@ -207,14 +245,21 @@ label {
   @media screen and (max-width: $small) {
     margin: 7px;
   }
+  @media screen and (max-width: $laptop) {
+    font-size: 50px;
+  }
 }
 
 #game-container p {
   @include text;
   margin: 10px;
+  text-align: center;
   @media screen and (max-width: $small) {
     margin: 9px;
     font-size: small;
+  }
+  @media screen and (max-width: $laptop) {
+    font-size: 25px;
   }
 }
 
@@ -239,6 +284,14 @@ a:visited {
     width: 50%;
     padding: 7px;
     border-radius: 25px;
+    background-color: white;
+    color: black;
+  }
+  @media screen and (max-width: $laptop) {
+    width: 15%;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 30px;
     background-color: white;
     color: black;
   }

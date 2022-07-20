@@ -6,6 +6,7 @@
    		<a href='https://github.com/AxelMrak' target="_blank"><img alt='Status' src='https://img.shields.io/badge/In_progress-100000?style=for-the-badge&logo=Status&logoColor=white&labelColor=037C01&color=037C01'/></a>
 		<a href='https://twitter.com/axel_mrak' target="_blank"><img alt='Twitter' src='https://img.shields.io/badge/Twitter-100000?style=for-the-badge&logo=Twitter&logoColor=white&labelColor=00acee&color=00acee'/></a>
 		<a href='https://www.linkedin.com/in/axel-sarmiento-mrak-8a0087229/' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/Linkedin-100000?style=for-the-badge&logo=Linkedin&logoColor=FFFFFF&labelColor=0e76a8&color=0e76a8'/></a>
+		<img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify"/>
 	</p>
 </div>
 

@@ -133,7 +133,7 @@ label {
   overflow: hidden;
   display: inline-block;
   @media screen and (max-width: $small) {
-    width: 40%;
+    width: 50%;
     padding: 17px;
     border-radius: 25px;
     font-size: 15px;
@@ -160,7 +160,6 @@ label {
   @media screen and (max-width: $small) {
     background: white;
     content: none;
-
   }
 }
 

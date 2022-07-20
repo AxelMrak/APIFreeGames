@@ -229,7 +229,7 @@ label {
 
 @media screen and (max-width: 450px) {
   #btn {
-    width: 40%;
+    width: 50%;
     padding: 17px;
     border-radius: 25px;
     font-size: 15px;

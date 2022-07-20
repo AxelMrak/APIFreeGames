@@ -249,6 +249,12 @@ label {
   transition: all 0.35s;
 }
 
+@media screen and (max-width: 450px) {
+  #btn::after {
+    background: white;
+  }
+}
+
 #btn:hover::after {
   left: 0;
   right: 0;

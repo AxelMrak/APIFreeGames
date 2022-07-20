@@ -10,7 +10,7 @@
 	</p>
 </div>
 
-![In progress](https://giphy.com/gifs/wirdesign-typography-wip-workinprogress-TOhTGM1xJ77bZwnNCy/fullscreen)
+![In progress](https://monophy.com/media/O7xsvQoMfiNVtKyAnJ/monophy.gif)
 
 <h2 id="index"> <strong> Index </strong> </h2>
 

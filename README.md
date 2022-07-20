@@ -13,38 +13,38 @@
 
 <h2 id="index"> <strong> Index </strong> </h2>
 
-* [Main title and image](#title-img)
+- [Main title and image](#title-img)
 
-* [Index](#index)
+- [Index](#index)
 
-* [Proyect description](#project-description)
+- [Proyect description](#project-description)
 
-* [Proyect-status](#project-status)
+- [Proyect-status](#project-status)
 
-* [Features](#features)
+- [Features](#features)
 
-* [Proyect access](#project-access)
+- [Proyect access](#project-access)
 
-* [Used technology](#technologies)
+- [Used technology](#technologies)
 
-* [About Dev](#dev)
+- [About Dev](#dev)
 
-* [License](#license)
+- [License](#license)
 
-* [Acknowledgments](#thanks)
+- [Acknowledgments](#thanks)
 
-* [Conclusion](#conclusion)
+- [Conclusion](#conclusion)
 
 <div id="project-description">
 	<h2>Proyect Description</h2>
 	<p> This project is a webpage where you can find free videogames for PC and browser. I used FreeToGame API for this website. When you put the platform and press search button, will appear 10 games of this platform. 
 	</p>	
-</div>	
+</div>
 
 <div id="project-status">
 	<h2>Project Status</h2>
 	<p>This project is still in progress.</p>	
-</div>	
+</div>
 
 <div id="features">
 	<h2>Features</h2>
@@ -52,12 +52,12 @@
 		<li>Call to Free to games API.</li>
 		<li>Find free games in PC or Browser.</li>
 	</ul>
-</div>	
+</div>
 
 <div id="project-access">
 	<h2>Project Access</h2>
 	<p>You can access in the next link: ########</p>
-</div>	
+</div>
 
 <div id="technologies">
 	<h2>Used technology</h2>
@@ -66,12 +66,12 @@
 	<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SASS"/>
 	<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/>
 	<img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify"/>
-</div>	
+</div>
 
 <div id="dev">
 	<h2>About me</h2>
 	<p>I`m Axel Sarmiento, from Argentina. Now, living in Italy. If you can know more: <a href="https://github.com/AxelMrak/Portfolio">Watch my portfolio</a> .</p> 
-</div>	
+</div>
 
 <div id="license">
 	<h2>License</h2>
@@ -87,7 +87,7 @@
 		<li>My parents and my brother for their constant support.</li>
 		<li>My dear Valentina for always believing in me.</li>
 	</ul>
-</div>	
+</div>
 
 <div id="conclusion">
 	<h2>Conclusion</h2>

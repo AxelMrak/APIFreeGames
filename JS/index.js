@@ -1,7 +1,7 @@
 // Obtenemos los elementos del DOM
 const input = document.getElementById(`field`);
 const button = document.getElementById(`btn`);
-const gameConteiner = document.getElementById(`game-conteiner`);
+const gameContainer = document.getElementById(`game-container`);
 // 
 
 button.addEventListener(`click`, e => {
@@ -25,9 +25,9 @@ function getGame(platform) {
 		.then(data => {//Accedemos a la informacion y nos devuelve un array de objetos, en donde cada objeto es un juego.
 			const data1 = data.slice(0, 10); //Limitamos la cantidad de objetos que mostramos en la pagina
 			data1.forEach(game => {// Para cada objeto dentro del array, cada objeto se llamará game y accederemos a los propiedades individuales de cada uno a traves de la iteracion FOREACH.
-				gameConteiner.style.display = "flex";
-				gameConteiner.style.flexDirection = "column";
-				gameConteiner.style.alignItems = "center"; //Centramos los divs del Contenedor principal
+				gameContainer.style.display = "flex";
+				gameContainer.style.flexDirection = "column";
+				gameContainer.style.alignItems = "center"; //Centramos los divs del Contenedor principal
 				const divs = document.createElement(`div`); //Creamos DIV en HTML
 				const img = document.createElement(`img`); //Creamos img en HTML
 				img.src = game.thumbnail; //Añadimos la imagen del juego (propiedad de objeto) al src del elemento img
@@ -38,11 +38,12 @@ function getGame(platform) {
 				const link = document.createElement(`a`);
 				link.textContent = "Go";
 				link.href = game.game_url;
+				link.target = "_blank";
 				divs.appendChild(img); //Agregamos img como hijo de div creado
 				divs.appendChild(h3);
 				divs.appendChild(description);
 				divs.append(link);
-				gameConteiner.appendChild(divs); //Añadimos divs como hijo del contenedor principal. Esto hará que cada juego sea contenido en un div independiente que contenga lo creado anteriormente (Img, title y description)
+				gameContainer.appendChild(divs); //Añadimos divs como hijo del contenedor principal. Esto hará que cada juego sea contenido en un div independiente que contenga lo creado anteriormente (Img, title y description)
 			});
 
 		});

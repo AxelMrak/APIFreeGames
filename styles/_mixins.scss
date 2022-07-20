@@ -1,0 +1,39 @@
+@mixin backgroundMain {
+  background: url(../img/background-hand-in.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+@mixin titles {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+@mixin subtitles {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin text {
+  font-family: "Hind", sans-serif;
+  font-weight: 200;
+}
+
+@mixin flexColumnCenterCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin glassmorphismTransp {
+  background: rgba(158, 118, 245, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(158, 118, 245, 0.11);
+}

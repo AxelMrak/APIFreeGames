@@ -1,30 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=Hind:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
-
-@mixin backgroundMain {
-  background: url(../img/background-hand-in.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-@mixin backgroundGames {
-}
-
-@mixin titles {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-}
-
-@mixin subtitles {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-@mixin text {
-  font-family: "Hind", sans-serif;
-  font-weight: 200;
-}
+@import "mixins";
 
 * {
   box-sizing: border-box;
@@ -36,12 +12,8 @@
   display: none;
 }
 
-
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexColumnCenterCenter;
   color: white;
   width: 100%;
   height: 100vh;
@@ -49,20 +21,12 @@
 }
 
 .welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexColumnCenterCenter;
+  @include glassmorphismTransp;
   flex-wrap: nowrap;
   // width: max-content; THIS IS FOR MOBILE MEDIAQUERIE
   width: 50vw;
   height: 50vh;
-  background: rgba(158, 118, 245, 0);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.7px);
-  -webkit-backdrop-filter: blur(6.7px);
-  border: 1px solid rgba(158, 118, 245, 0.11);
 }
 
 .welcome h1 {
@@ -80,24 +44,31 @@
 
 .arrow {
   margin: 3rem;
+  animation: arrow 2s infinite alternate;
+}
+
+@keyframes arrow {
+  0% {
+    margin: 3rem;
+    opacity: 0;
+  }
+
+  100% {
+    margin: 2rem;
+    opacity: 1;
+  }
 }
 
 .games {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexColumnCenterCenter;
+  @include backgroundMain;
   width: 100%;
   height: max-content;
   color: white;
-  @include backgroundMain;
 }
 
-#conteiner-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#container-form {
+  @include flexColumnCenterCenter;
   width: 60%;
   padding: 30px;
   margin: 50px;
@@ -109,29 +80,29 @@
   border: 1px solid rgba(255, 255, 255, 0.072);
 }
 
-#conteiner-form h1 {
+#container-form h1 {
   @include titles;
   margin-bottom: 2rem;
 }
 
 label {
-  margin-bottom: 2rem;
   @include subtitles;
+  margin-bottom: 2rem;
 }
 
 #field {
+  @include text;
   text-align: center;
   border: 1px solid white;
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 2rem;
-  @include text;
   font-weight: 500;
 }
 
 #btn {
-  width: 26%;
   @include text;
+  width: 26%;
   font-weight: 500;
   color: rgb(40, 1, 51);
   border: 1px solid white;
@@ -172,50 +143,39 @@ label {
 }
 
 #game-conteiner {
+  @include flexColumnCenterCenter;
   margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-#game-conteiner div:hover {
+#game-container div:hover {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
-#game-conteiner div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#game-container div {
+  @include flexColumnCenterCenter;
+  @include glassmorphismTransp;
   width: 70%;
   height: 50%;
   margin: 15px;
   padding: 20px;
-  background: rgba(158, 118, 245, 0);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.7px);
-  -webkit-backdrop-filter: blur(6.7px);
-  border: 1px solid rgba(158, 118, 245, 0.11);
 }
 
-#game-conteiner img {
+#game-container img {
   margin: 5px;
   border-radius: 10px;
 }
 
-#game-conteiner h3 {
+#game-container h3 {
   @include subtitles;
   margin: 10px;
 }
 
-#game-conteiner p {
+#game-container p {
   @include text;
   margin: 10px;
 }
 
-#game-conteiner a:link,
+#game-container a:link,
 a:visited {
   @include text;
   width: 10%;
@@ -234,12 +194,12 @@ a:visited {
   display: inline-block;
 }
 
-#game-conteiner a:hover {
+#game-container a:hover {
   color: white;
   border: 1px solid white;
 }
 
-#game-conteiner a::after {
+#game-container a::after {
   content: "";
   background: #5a52fb1f; /* color de fondo hover */
   position: absolute;
@@ -254,7 +214,7 @@ a:visited {
   transition: all 0.3s ease;
 }
 
-#game-conteiner a:hover::after {
+#game-container a:hover::after {
   transition: all 0.3s ease-out;
   transform: scale(1, 1);
 }

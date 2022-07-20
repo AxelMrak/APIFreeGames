@@ -3,7 +3,7 @@
 </div>
 <div id="title-img"> 
 	<p align="center">
-   	<a href='https://github.com/AxelMrak' target="_blank"><img alt='Status' src='https://img.shields.io/badge/In_progress-100000?style=for-the-badge&logo=Status&logoColor=white&labelColor=037C01&color=037C01'/></a>
+   		<a href='https://github.com/AxelMrak' target="_blank"><img alt='Status' src='https://img.shields.io/badge/In_progress-100000?style=for-the-badge&logo=Status&logoColor=white&labelColor=037C01&color=037C01'/></a>
 		<a href='https://twitter.com/axel_mrak' target="_blank"><img alt='Twitter' src='https://img.shields.io/badge/Twitter-100000?style=for-the-badge&logo=Twitter&logoColor=white&labelColor=00acee&color=00acee'/></a>
 		<a href='https://www.linkedin.com/in/axel-sarmiento-mrak-8a0087229/' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/Linkedin-100000?style=for-the-badge&logo=Linkedin&logoColor=FFFFFF&labelColor=0e76a8&color=0e76a8'/></a>
 	</p>
@@ -91,5 +91,6 @@
 
 <div id="conclusion">
 	<h2>Conclusion</h2>
-	<p> This project is one of the first that I have done. I hope you like it and you can send me your suggestions regarding it. This road is more beautiful with the help of others.	</p>
+	<p> This project is one of the first that I have done. I hope you like it and you can send me your suggestions regarding it. This road is more beautiful with the help of others.	
+	</p>
 </div>

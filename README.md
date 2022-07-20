@@ -1,31 +1,29 @@
 #title-img <h1 align="center"> FreeGames </h1>
+
 <p align="left">
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
 </p>
+
 #title-img ![In progress](https://user-images.githubusercontent.com/96851183/180001587-e1ed1395-8a37-4870-ab9d-bf6384cc943b.gif)
 
-##Índice
+##Index
 
-*[Main Title and Image](#title-img)
+*[Main title and image](#title-img)
 
-*[Insignias](#insignias)
+*[Index](#Index)
 
-*[Índice](#índice)
+*[Proyect description](#proyect-description)
 
-*[Descripción del proyecto](#descripción-del-proyecto)
+*[Proyect-status](#proyect-status)
 
-*[Estado del proyecto](#Estado-del-proyecto)
+*[Features](#features)
 
-*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+*[Proyect access](#proyect-access)
 
-*[Acceso al proyecto](#acceso-proyecto)
+*[Used technology](#technologies)
 
-*[Tecnologías utilizadas](#tecnologías-utilizadas)
+*[About Dev](#dev)
 
-*[Personas Contribuyentes](#personas-contribuyentes)
+* [License](#license)
 
-*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
-
-* [Licencia](#licencia)
-
-*[Conclusión](#conclusión)
+*[Conclusion](#conclusion)

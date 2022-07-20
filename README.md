@@ -1,5 +1,6 @@
-<h1 align="center" id="title-img"> FreeGames </h1>
-
+<div id="title-img">
+<h1 align="center" id="title-img"><img src="https://img.icons8.com/external-flat-andi-nur-abdillah/64/000000/external-Games-virtual-reality-(flat)-flat-andi-nur-abdillah.png"/> FreeGames <img src="https://img.icons8.com/external-flat-andi-nur-abdillah/64/000000/external-Games-virtual-reality-(flat)-flat-andi-nur-abdillah.png"/></h1> 
+</div>
 <div id="title-img"> 
 	<p align="center">
    	<a href='https://github.com/AxelMrak' target="_blank"><img alt='Status' src='https://img.shields.io/badge/In_progress-100000?style=for-the-badge&logo=Status&logoColor=white&labelColor=037C01&color=037C01'/></a>
@@ -9,7 +10,7 @@
 	</p>
 </div>
 
-![In progress](https://user-images.githubusercontent.com/96851183/180001587-e1ed1395-8a37-4870-ab9d-bf6384cc943b.gif)
+![In progress](https://giphy.com/gifs/wirdesign-typography-wip-workinprogress-TOhTGM1xJ77bZwnNCy/fullscreen)
 
 <h2 id="index"> <strong> Index </strong> </h2>
 

@@ -57,7 +57,7 @@
 
 <div id="project-access">
 	<h2>Project Access</h2>
-	<p>You can access here <a href="https://effervescent-panda-9d9eb4.netlify.app/">Web Site Link</a></p>
+	<p>You can access here <a href="https://freegames-axelmrak.netlify.app">Web Site Link</a></p>
 </div>
 
 <div id="technologies">
@@ -71,7 +71,7 @@
 
 <div id="dev">
 	<h2>About me</h2>
-	<p>I`m Axel Sarmiento, from Argentina. Now, living in Italy. If you can know more: <a href="https://github.com/AxelMrak/Portfolio">Watch my portfolio</a> .</p> 
+	<p>I`m Axel Sarmiento, from Argentina. Now, living in Italy. If you can know more: <a href="https://lechic-axelmrak.netlify.app">Watch my portfolio</a> .</p> 
 </div>
 
 <div id="license">

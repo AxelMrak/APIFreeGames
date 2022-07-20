@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=Hind:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
 @import "mixins";
 
+$small: 350px;
+$medium: 350px;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,6 +30,10 @@
   // width: max-content; THIS IS FOR MOBILE MEDIAQUERIE
   width: 50vw;
   height: 50vh;
+  @media screen and (max-width: $small) {
+    width: 50vh;
+    text-align: center;
+  }
 }
 
 .welcome h1 {
@@ -40,6 +47,9 @@
   margin: 1rem;
   font-size: larger;
   color: white;
+  @media screen and (max-width: $small) {
+    font-size: medium;
+  }
 }
 
 .arrow {
@@ -65,6 +75,9 @@
   width: 100%;
   height: max-content;
   color: white;
+  @media screen and (max-width: $small) {
+    width: 100vw;
+  }
 }
 
 #container-form {
@@ -78,6 +91,10 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.072);
+  @media screen and (max-width: $small) {
+    width: 55vh;
+    text-align: center;
+  }
 }
 
 #container-form h1 {
@@ -112,6 +129,12 @@ label {
   z-index: 1;
   overflow: hidden;
   display: inline-block;
+  @media screen and (max-width: $small) {
+    width: 60%;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+  }
 }
 
 #btn:hover {
@@ -158,21 +181,34 @@ label {
   height: 50%;
   margin: 15px;
   padding: 20px;
+  @media screen and (max-width: $small) {
+    width: 73%;
+  }
 }
 
 #game-container img {
   margin: 5px;
   border-radius: 10px;
+  @media screen and (max-width: $small) {
+    width: 113%;
+  }
 }
 
 #game-container h3 {
   @include subtitles;
   margin: 10px;
+  @media screen and (max-width: $small) {
+    margin: 7px;
+  }
 }
 
 #game-container p {
   @include text;
   margin: 10px;
+  @media screen and (max-width: $small) {
+    margin: 9px;
+    font-size: small;
+  }
 }
 
 #game-container a:link,
@@ -192,6 +228,13 @@ a:visited {
   z-index: 1;
   overflow: hidden;
   display: inline-block;
+  @media screen and (max-width: $small) {
+    width: 50%;
+    padding: 7px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+  }
 }
 
 #game-container a:hover {

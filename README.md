@@ -56,7 +56,7 @@
 
 <div id="project-access">
 	<h2>Project Access</h2>
-	<p>You can access in the next link: ########</p>
+	<p>You can access here <a href="https://effervescent-panda-9d9eb4.netlify.app/">Web Site Link</a></p>
 </div>
 
 <div id="technologies">

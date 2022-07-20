@@ -59,12 +59,12 @@
       flex-wrap: nowrap;
   width: 50vw;
   height: 50vh;
+  text-align: center;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .welcome {
     width: 50vh;
-    text-align: center;
   }
 }
 
@@ -84,7 +84,7 @@
   color: white;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .welcome p {
     font-size: medium;
   }
@@ -143,7 +143,7 @@
   color: white;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .games {
     width: 100vw;
   }
@@ -173,12 +173,12 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.072);
+  text-align: center;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   #container-form {
     width: 55vh;
-    text-align: center;
   }
 }
 
@@ -221,7 +221,7 @@ label {
   display: inline-block;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   #btn {
     width: 60%;
     padding: 10px;
@@ -307,7 +307,7 @@ label {
   padding: 20px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   #game-container div {
     width: 73%;
   }
@@ -318,7 +318,7 @@ label {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   #game-container img {
     width: 113%;
   }
@@ -331,7 +331,7 @@ label {
   margin: 10px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   #game-container h3 {
     margin: 7px;
   }
@@ -343,7 +343,7 @@ label {
   margin: 10px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   #game-container p {
     margin: 9px;
     font-size: small;
@@ -370,7 +370,7 @@ a:visited {
   display: inline-block;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   #game-container a:link,
   a:visited {
     width: 50%;

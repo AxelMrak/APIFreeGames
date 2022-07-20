@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=Hind:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
 @import "mixins";
 
-$small: 350px;
-$medium: 350px;
+$small: 450px;
+
 
 * {
   box-sizing: border-box;
@@ -30,9 +30,9 @@ $medium: 350px;
   // width: max-content; THIS IS FOR MOBILE MEDIAQUERIE
   width: 50vw;
   height: 50vh;
+  text-align: center;
   @media screen and (max-width: $small) {
     width: 50vh;
-    text-align: center;
   }
 }
 
@@ -91,9 +91,9 @@ $medium: 350px;
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.072);
+  text-align: center;
   @media screen and (max-width: $small) {
     width: 55vh;
-    text-align: center;
   }
 }
 

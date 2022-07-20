@@ -26,7 +26,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url(../img/background-hand-in.jpg);
   background-position: center;
@@ -57,14 +57,14 @@
   border: 1px solid rgba(158, 118, 245, 0.11);
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 50vw;
-  height: 50vh;
+  width: 50%;
+  height: 40%;
   text-align: center;
 }
 
 @media screen and (max-width: 450px) {
   .welcome {
-    width: 60vh;
+    width: 60%;
   }
 }
 
@@ -136,7 +136,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  width: 100%;
+  width: 100vw;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;

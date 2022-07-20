@@ -18,7 +18,7 @@ $laptop: 1024px;
 .main {
   @include flexColumnCenterCenter;
   color: white;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   @include backgroundMain;
 }
@@ -28,11 +28,11 @@ $laptop: 1024px;
   @include glassmorphismTransp;
   flex-wrap: nowrap;
   // width: max-content; THIS IS FOR MOBILE MEDIAQUERIE
-  width: 50vw;
-  height: 50vh;
+  width: 50%;
+  height: 40%;
   text-align: center;
   @media screen and (max-width: $small) {
-    width: 60vh;
+    width: 60%;
   }
 }
 
@@ -72,7 +72,7 @@ $laptop: 1024px;
 .games {
   @include flexColumnCenterCenter;
   @include backgroundMain;
-  width: 100%;
+  width: 100vw;
   height: max-content;
   color: white;
   @media screen and (max-width: $small) {

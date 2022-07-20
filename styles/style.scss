@@ -115,6 +115,9 @@ label {
   padding: 10px;
   margin-bottom: 2rem;
   font-weight: 500;
+  @media screen and (max-width: $small) {
+   padding: 20px;
+  }
 }
 
 #btn {
@@ -130,8 +133,8 @@ label {
   overflow: hidden;
   display: inline-block;
   @media screen and (max-width: $small) {
-    width: 60%;
-    padding: 10px;
+    width: 40%;
+    padding: 17px;
     border-radius: 25px;
     font-size: 15px;
   }
@@ -156,6 +159,7 @@ label {
   transition: all 0.35s;
   @media screen and (max-width: $small) {
     background: white;
+    content: none;
   }
 }
 

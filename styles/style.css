@@ -206,6 +206,12 @@ label {
   font-weight: 500;
 }
 
+@media screen and (max-width: 450px) {
+  #field {
+    padding: 20px;
+  }
+}
+
 #btn {
   font-family: "Hind", sans-serif;
   font-weight: 200;
@@ -223,8 +229,8 @@ label {
 
 @media screen and (max-width: 450px) {
   #btn {
-    width: 60%;
-    padding: 10px;
+    width: 40%;
+    padding: 17px;
     border-radius: 25px;
     font-size: 15px;
   }
@@ -252,6 +258,7 @@ label {
 @media screen and (max-width: 450px) {
   #btn::after {
     background: white;
+    content: none;
   }
 }
 

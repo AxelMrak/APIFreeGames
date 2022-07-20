@@ -6,7 +6,7 @@
    	<a href='https://github.com/AxelMrak' target="_blank"><img alt='Status' src='https://img.shields.io/badge/In_progress-100000?style=for-the-badge&logo=Status&logoColor=white&labelColor=037C01&color=037C01'/></a>
 		<a href='https://twitter.com/axel_mrak' target="_blank"><img alt='Twitter' src='https://img.shields.io/badge/Twitter-100000?style=for-the-badge&logo=Twitter&logoColor=white&labelColor=00acee&color=00acee'/></a>
 		<a href='https://www.linkedin.com/in/axel-sarmiento-mrak-8a0087229/' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/Linkedin-100000?style=for-the-badge&logo=Linkedin&logoColor=FFFFFF&labelColor=0e76a8&color=0e76a8'/></a>
-		<a href="mailto:axelmrak@gmail.com?Subject=Github%20User" target="_blank"><img alt='Gmail' src='https://img.shields.io/badge/Contact_Me-100000?style=for-the-badge&logo=Gmail&logoColor=FFFFFF&labelColor=7F7F7F&color=FAFAFA'/></a>
+		<a href="mailto:axelmrak@gmail.com? Subject=Github%20User" target="_blank"><img alt='Gmail' src='https://img.shields.io/badge/Contact_Me-100000?style=for-the-badge&logo=Gmail&logoColor=FFFFFF&labelColor=7F7F7F&color=FAFAFA'/></a>
 	</p>
 </div>
 

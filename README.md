@@ -31,6 +31,8 @@
 
 * [License](#license)
 
+* [Acknowledgments](#thanks)
+
 * [Conclusion](#conclusion)
 
 <div id="project-description">
@@ -74,5 +76,20 @@
 <div id="license">
 	<h2>License</h2>
 	<p>This project use <a href="https://github.com/AxelMrak/APIFreeGames/blob/master/LICENSE"> MIT LICENSE </a>. </p>
+</div>
+
+<div id="thanks">
+	<h2>Acknowledgments</h2>
+	<p>I feel the need to give my thanks to: </p>
+	<ul>
+		<li>Pexels for the images <a href="https://www.pexels.com/es-es/">Site Here</a></li>
+		<li>Iconos8 for the icons <a href="https://iconos8.es/">Site Here</a></li>
+		<li>My parents and my brother for their constant support.</li>
+		<li>My dear Valentina for always believing in me.</li>
+	</ul>
 </div>	
-	
+
+<div id="conclusion">
+	<h2>Conclusion</h2>
+	<p> This project is one of the first that I have done. I hope you like it and you can send me your suggestions regarding it. This road is more beautiful with the help of others.	</p>
+</div>

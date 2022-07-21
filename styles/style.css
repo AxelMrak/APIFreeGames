@@ -208,6 +208,7 @@ label {
 
 @media screen and (max-width: 450px) {
   #field {
+    width: 80%;
     padding: 10px;
   }
 }

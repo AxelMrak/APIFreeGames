@@ -6,7 +6,7 @@ $small: 450px;
 
 
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0;
   padding: 0;
 }
@@ -123,11 +123,11 @@ label {
 
 #btn {
   @include text;
-  width: 26%;
+  width: 20%;
   font-weight: 500;
   color: #000000;
   border: 1px solid white;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 5px;
   @media screen and (max-width: $small) {
     width: 50%;
@@ -192,15 +192,15 @@ label {
 #game-container a:link,
 a:visited {
   @include text;
-  width: 10%;
-  background-color: rgba(0, 0, 0, 0);
+  width: 25%;
+  background-color: #ffffff;
   padding: 5px;
   margin: 5px;
   border: 1px solid rgba(255, 255, 255, 0.265);
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-style: normal;
   position: relative;
   z-index: 1;
@@ -222,7 +222,7 @@ a:visited {
 
 #game-container a::after {
   content: "";
-  background: #a600ff2b;
+  background: #28003ccb;
   position: absolute;
   z-index: -1;
   padding: 16px 20px;

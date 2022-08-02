@@ -15,6 +15,8 @@ $small: 450px;
   display: none;
 }
 
+//Styles main
+
 .main {
   @include flexColumnCenterCenter;
   color: white;
@@ -54,6 +56,7 @@ $small: 450px;
 
 .arrow {
   margin: 3rem;
+  transition: all 2s;
   animation: arrow 2s infinite alternate;
 }
 
@@ -69,6 +72,8 @@ $small: 450px;
   }
 }
 
+//Styles main div games
+
 .games {
   @include flexColumnCenterCenter;
   @include backgroundMain;
@@ -80,17 +85,19 @@ $small: 450px;
   }
 }
 
+//Styles container search
+
 #container-form {
   @include flexColumnCenterCenter;
   width: 60%;
   padding: 30px;
   margin: 50px;
-  background: #52026d3e;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #52026d1c;
+  box-shadow: 0 8px 32px 0 #1f268752;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.072);
+  border: 1px solid #ffffff12;
   text-align: center;
   @media screen and (max-width: $small) {
     width: 60%;
@@ -129,6 +136,7 @@ label {
   border: 1px solid white;
   border-radius: 20px;
   padding: 5px;
+  transition: color 2s;
   @media screen and (max-width: $small) {
     width: 50%;
     padding: 17px;
@@ -138,13 +146,17 @@ label {
 }
 
 #btn:hover {
-  color: white;
+  background-color: #52026d1c;
+  color: #ffffff;
+  border: 2px solid #530053;
 }
 
+//Styles each container of games
 
 #game-conteiner {
   @include flexColumnCenterCenter;
   margin-top: 100px;
+  transition: all 2s;
 }
 
 #game-container div:hover {
@@ -196,16 +208,13 @@ a:visited {
   background-color: #ffffff;
   padding: 5px;
   margin: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.265);
+  border: 1px solid #ffffff44;
   border-radius: 15px;
   text-align: center;
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-style: normal;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: inline-block;
+  transition: all 2s;
   @media screen and (max-width: $small) {
     width: 50%;
     padding: 7px;
@@ -215,27 +224,8 @@ a:visited {
   }
 }
 
-#game-container a:hover {
-  color: white;
-  border: 1px solid white;
-}
-
-#game-container a::after {
-  content: "";
-  background: #28003ccb;
-  position: absolute;
-  z-index: -1;
-  padding: 16px 20px;
-  display: block;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: scale(0, 0);
-  transition: all 0.3s ease;
-}
-
-#game-container a:hover::after {
-  transition: all 0.3s ease-out;
-  transform: scale(1, 1);
+#game-container a:hover{
+  background-color: #53005338;
+  color: #ffffff;
+  border: 2px solid #530053;
 }

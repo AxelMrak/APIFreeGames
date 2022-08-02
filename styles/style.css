@@ -92,6 +92,8 @@
 
 .arrow {
   margin: 3rem;
+  -webkit-transition: all 2s;
+  transition: all 2s;
   -webkit-animation: arrow 2s infinite alternate;
           animation: arrow 2s infinite alternate;
 }
@@ -166,13 +168,13 @@
   width: 60%;
   padding: 30px;
   margin: 50px;
-  background: #52026d3e;
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #52026d1c;
+  -webkit-box-shadow: 0 8px 32px 0 #1f268752;
+          box-shadow: 0 8px 32px 0 #1f268752;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.072);
+  border: 1px solid #ffffff12;
   text-align: center;
 }
 
@@ -222,6 +224,8 @@ label {
   border: 1px solid white;
   border-radius: 20px;
   padding: 5px;
+  -webkit-transition: color 2s;
+  transition: color 2s;
 }
 
 @media screen and (max-width: 450px) {
@@ -234,7 +238,9 @@ label {
 }
 
 #btn:hover {
-  color: white;
+  background-color: #52026d1c;
+  color: #ffffff;
+  border: 2px solid #530053;
 }
 
 #game-conteiner {
@@ -252,6 +258,8 @@ label {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 100px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 #game-container div:hover {
@@ -338,16 +346,14 @@ a:visited {
   background-color: #ffffff;
   padding: 5px;
   margin: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.265);
+  border: 1px solid #ffffff44;
   border-radius: 15px;
   text-align: center;
   text-decoration: none;
   color: black;
   font-style: normal;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: inline-block;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 @media screen and (max-width: 450px) {
@@ -362,31 +368,8 @@ a:visited {
 }
 
 #game-container a:hover {
-  color: white;
-  border: 1px solid white;
-}
-
-#game-container a::after {
-  content: "";
-  background: #28003ccb;
-  position: absolute;
-  z-index: -1;
-  padding: 16px 20px;
-  display: block;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  -webkit-transform: scale(0, 0);
-          transform: scale(0, 0);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#game-container a:hover::after {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  background-color: #53005338;
+  color: #ffffff;
+  border: 2px solid #530053;
 }
 /*# sourceMappingURL=style.css.map */

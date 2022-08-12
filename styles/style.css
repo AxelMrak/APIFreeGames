@@ -48,8 +48,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(158, 118, 245, 0);
-  border-radius: 16px;
+  background: #ffffff08;
+  border-radius: 20px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.7px);
@@ -166,16 +166,16 @@
       -ms-flex-align: center;
           align-items: center;
   width: 60%;
-  padding: 30px;
-  margin: 50px;
-  background: #52026d1c;
-  -webkit-box-shadow: 0 8px 32px 0 #1f268752;
-          box-shadow: 0 8px 32px 0 #1f268752;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid #ffffff12;
+  padding: 1rem;
+  margin: 1rem;
   text-align: center;
+  background: #ffffff08;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(158, 118, 245, 0.11);
 }
 
 @media screen and (max-width: 450px) {
@@ -203,7 +203,7 @@ label {
   text-align: center;
   border: 1px solid white;
   border-radius: 20px;
-  padding: 10px;
+  padding: 0.5rem;
   margin-bottom: 2rem;
   font-weight: 500;
 }
@@ -211,21 +211,23 @@ label {
 @media screen and (max-width: 450px) {
   #field {
     width: 80%;
-    padding: 10px;
+    padding: 1rem;
   }
 }
 
 #btn {
   font-family: "Hind", sans-serif;
   font-weight: 200;
-  width: 20%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-weight: 500;
   color: #000000;
   border: 1px solid white;
-  border-radius: 20px;
-  padding: 5px;
-  -webkit-transition: color 2s;
-  transition: color 2s;
+  border-radius: 12px;
+  padding: 0.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 @media screen and (max-width: 450px) {
@@ -238,9 +240,9 @@ label {
 }
 
 #btn:hover {
-  background-color: #52026d1c;
+  background-color: #0000001c;
   color: #ffffff;
-  border: 2px solid #530053;
+  border: 1px solid #530053;
 }
 
 #game-conteiner {
@@ -263,8 +265,8 @@ label {
 }
 
 #game-container div:hover {
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(61, 61, 62, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(61, 61, 62, 0.37);
 }
 
 #game-container div {
@@ -281,8 +283,8 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(158, 118, 245, 0);
-  border-radius: 16px;
+  background: #ffffff08;
+  border-radius: 20px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.7px);
@@ -301,7 +303,7 @@ label {
 }
 
 #game-container img {
-  margin: 5px;
+  margin: 0.5rem;
   border-radius: 10px;
 }
 
@@ -315,7 +317,7 @@ label {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-style: italic;
-  margin: 10px;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 450px) {
@@ -327,13 +329,13 @@ label {
 #game-container p {
   font-family: "Hind", sans-serif;
   font-weight: 200;
-  margin: 10px;
+  margin: 1rem;
   text-align: center;
 }
 
 @media screen and (max-width: 450px) {
   #game-container p {
-    margin: 9px;
+    margin: 1rem;
     font-size: small;
   }
 }
@@ -342,12 +344,12 @@ label {
 a:visited {
   font-family: "Hind", sans-serif;
   font-weight: 200;
-  width: 25%;
+  width: 80px;
   background-color: #ffffff;
-  padding: 5px;
-  margin: 5px;
+  padding: 0.5rem;
+  margin: 1rem;
   border: 1px solid #ffffff44;
-  border-radius: 15px;
+  border-radius: 12px;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -359,8 +361,7 @@ a:visited {
 @media screen and (max-width: 450px) {
   #game-container a:link,
   a:visited {
-    width: 50%;
-    padding: 7px;
+    padding: 1rem;
     border-radius: 25px;
     background-color: white;
     color: black;
@@ -368,8 +369,8 @@ a:visited {
 }
 
 #game-container a:hover {
-  background-color: #53005338;
+  background-color: #0000001c;
   color: #ffffff;
-  border: 2px solid #530053;
+  border: 1px solid #530053;
 }
 /*# sourceMappingURL=style.css.map */

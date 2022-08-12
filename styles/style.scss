@@ -90,15 +90,10 @@ $small: 450px;
 #container-form {
   @include flexColumnCenterCenter;
   width: 60%;
-  padding: 30px;
-  margin: 50px;
-  background: #52026d1c;
-  box-shadow: 0 8px 32px 0 #1f268752;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid #ffffff12;
+  padding: 1rem;
+  margin: 1rem;
   text-align: center;
+  @include glassmorphismTransp;
   @media screen and (max-width: $small) {
     width: 60%;
   }
@@ -119,24 +114,24 @@ label {
   text-align: center;
   border: 1px solid white;
   border-radius: 20px;
-  padding: 10px;
+  padding: 0.5rem;
   margin-bottom: 2rem;
   font-weight: 500;
   @media screen and (max-width: $small) {
     width: 80%;
-   padding: 10px;
+   padding: 1rem;
   }
 }
 
 #btn {
   @include text;
-  width: 20%;
+  width: max-content;
   font-weight: 500;
   color: #000000;
   border: 1px solid white;
-  border-radius: 20px;
-  padding: 5px;
-  transition: color 2s;
+  border-radius: 12px;
+  padding: 0.5rem;
+  transition: all 1s;
   @media screen and (max-width: $small) {
     width: 50%;
     padding: 17px;
@@ -146,9 +141,9 @@ label {
 }
 
 #btn:hover {
-  background-color: #52026d1c;
+  background-color: #0000001c;
   color: #ffffff;
-  border: 2px solid #530053;
+  border: 1px solid #530053;
 }
 
 //Styles each container of games
@@ -160,7 +155,7 @@ label {
 }
 
 #game-container div:hover {
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(61, 61, 62, 0.37);
 }
 
 #game-container div {
@@ -176,7 +171,7 @@ label {
 }
 
 #game-container img {
-  margin: 5px;
+  margin: 0.5rem;
   border-radius: 10px;
   @media screen and (max-width: $small) {
     width: 110%;
@@ -185,7 +180,7 @@ label {
 
 #game-container h3 {
   @include subtitles;
-  margin: 10px;
+  margin: 1rem;
   @media screen and (max-width: $small) {
     margin: 7px;
   }
@@ -193,10 +188,10 @@ label {
 
 #game-container p {
   @include text;
-  margin: 10px;
+  margin: 1rem;
   text-align: center;
   @media screen and (max-width: $small) {
-    margin: 9px;
+    margin: 1rem;
     font-size: small;
   }
 }
@@ -204,20 +199,19 @@ label {
 #game-container a:link,
 a:visited {
   @include text;
-  width: 25%;
+  width: 80px;
   background-color: #ffffff;
-  padding: 5px;
-  margin: 5px;
+  padding: 0.5rem;
+  margin: 1rem;
   border: 1px solid #ffffff44;
-  border-radius: 15px;
+  border-radius: 12px;
   text-align: center;
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-style: normal;
   transition: all 2s;
   @media screen and (max-width: $small) {
-    width: 50%;
-    padding: 7px;
+    padding: 1rem;
     border-radius: 25px;
     background-color: white;
     color: black;
@@ -225,7 +219,7 @@ a:visited {
 }
 
 #game-container a:hover{
-  background-color: #53005338;
+  background-color: #0000001c;
   color: #ffffff;
-  border: 2px solid #530053;
+  border: 1px solid #530053;
 }

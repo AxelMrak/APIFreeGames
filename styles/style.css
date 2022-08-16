@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=Hind:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
 * {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   margin: 0;
   padding: 0;
 }
@@ -12,19 +11,10 @@
 }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   width: 100vw;
   height: 100vh;
@@ -35,33 +25,21 @@
 }
 
 .welcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: rgba(158, 118, 245, 0);
   border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.7px);
   -webkit-backdrop-filter: blur(6.7px);
   border: 1px solid rgba(158, 118, 245, 0.11);
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   width: 50%;
   height: 40%;
   text-align: center;
 }
-
 @media screen and (max-width: 450px) {
   .welcome {
     width: 60%;
@@ -83,7 +61,6 @@
   font-size: larger;
   color: white;
 }
-
 @media screen and (max-width: 450px) {
   .welcome p {
     font-size: medium;
@@ -92,7 +69,6 @@
 
 .arrow {
   margin: 3rem;
-  -webkit-transition: all 2s;
   transition: all 2s;
   -webkit-animation: arrow 2s infinite alternate;
           animation: arrow 2s infinite alternate;
@@ -119,21 +95,11 @@
     opacity: 1;
   }
 }
-
 .games {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: url(../img/background-hand-in.jpg);
   background-position: center;
   background-size: cover;
@@ -144,7 +110,6 @@
   height: max-content;
   color: white;
 }
-
 @media screen and (max-width: 450px) {
   .games {
     width: 100vw;
@@ -152,32 +117,21 @@
 }
 
 #container-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60%;
   padding: 30px;
   margin: 50px;
-  background: #52026d1c;
-  -webkit-box-shadow: 0 8px 32px 0 #1f268752;
-          box-shadow: 0 8px 32px 0 #1f268752;
+  background: rgba(82, 2, 109, 0.1098039216);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3215686275);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
-  border: 1px solid #ffffff12;
+  border: 1px solid rgba(255, 255, 255, 0.0705882353);
   text-align: center;
 }
-
 @media screen and (max-width: 450px) {
   #container-form {
     width: 60%;
@@ -207,7 +161,6 @@ label {
   margin-bottom: 2rem;
   font-weight: 500;
 }
-
 @media screen and (max-width: 450px) {
   #field {
     width: 80%;
@@ -224,10 +177,8 @@ label {
   border: 1px solid white;
   border-radius: 20px;
   padding: 5px;
-  -webkit-transition: color 2s;
   transition: color 2s;
 }
-
 @media screen and (max-width: 450px) {
   #btn {
     width: 50%;
@@ -238,53 +189,32 @@ label {
 }
 
 #btn:hover {
-  background-color: #52026d1c;
+  background-color: rgba(82, 2, 109, 0.1098039216);
   color: #ffffff;
   border: 2px solid #530053;
 }
 
 #game-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
-  -webkit-transition: all 2s;
   transition: all 2s;
 }
 
 #game-container div:hover {
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 #game-container div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: rgba(158, 118, 245, 0);
   border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.7px);
   -webkit-backdrop-filter: blur(6.7px);
   border: 1px solid rgba(158, 118, 245, 0.11);
@@ -293,7 +223,6 @@ label {
   margin: 15px;
   padding: 20px;
 }
-
 @media screen and (max-width: 450px) {
   #game-container div {
     width: 73%;
@@ -304,7 +233,6 @@ label {
   margin: 5px;
   border-radius: 10px;
 }
-
 @media screen and (max-width: 450px) {
   #game-container img {
     width: 110%;
@@ -317,7 +245,6 @@ label {
   font-style: italic;
   margin: 10px;
 }
-
 @media screen and (max-width: 450px) {
   #game-container h3 {
     margin: 7px;
@@ -330,7 +257,6 @@ label {
   margin: 10px;
   text-align: center;
 }
-
 @media screen and (max-width: 450px) {
   #game-container p {
     margin: 9px;
@@ -346,19 +272,17 @@ a:visited {
   background-color: #ffffff;
   padding: 5px;
   margin: 5px;
-  border: 1px solid #ffffff44;
+  border: 1px solid rgba(255, 255, 255, 0.2666666667);
   border-radius: 15px;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-style: normal;
-  -webkit-transition: all 2s;
   transition: all 2s;
 }
-
 @media screen and (max-width: 450px) {
   #game-container a:link,
-  a:visited {
+a:visited {
     width: 50%;
     padding: 7px;
     border-radius: 25px;
@@ -368,8 +292,7 @@ a:visited {
 }
 
 #game-container a:hover {
-  background-color: #53005338;
+  background-color: rgba(83, 0, 83, 0.2196078431);
   color: #ffffff;
   border: 2px solid #530053;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

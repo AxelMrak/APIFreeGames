@@ -191,7 +191,9 @@ label {
 }
 
 #btn:hover {
+
   background-color: rgba(0, 0, 0, 0.1098039216);
+
   color: #ffffff;
   border: 1px solid #530053;
 }
@@ -206,7 +208,9 @@ label {
 }
 
 #game-container div:hover {
+
   box-shadow: 0 8px 32px 0 rgba(61, 61, 62, 0.37);
+
 }
 
 #game-container div {
@@ -214,8 +218,10 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   background: rgba(255, 255, 255, 0.031372549);
   border-radius: 20px;
+
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.7px);
   -webkit-backdrop-filter: blur(6.7px);
@@ -272,10 +278,12 @@ a:visited {
   font-weight: 200;
   width: 80px;
   background-color: #ffffff;
+
   padding: 0.5rem;
   margin: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2666666667);
   border-radius: 12px;
+
   text-align: center;
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -286,6 +294,7 @@ a:visited {
   #game-container a:link,
 a:visited {
     padding: 1rem;
+
     border-radius: 25px;
     background-color: white;
     color: black;
@@ -293,7 +302,9 @@ a:visited {
 }
 
 #game-container a:hover {
+
   background-color: rgba(0, 0, 0, 0.1098039216);
   color: #ffffff;
   border: 1px solid #530053;
+
 }/*# sourceMappingURL=style.css.map */

@@ -29,8 +29,8 @@
 }
 
 @mixin glassmorphismTransp {
-  background: rgba(158, 118, 245, 0);
-  border-radius: 16px;
+  background: #ffffff08;
+  border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.7px);
   -webkit-backdrop-filter: blur(6.7px);
